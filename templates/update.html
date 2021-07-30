@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Blog!!</title>
+</head>
+<body>
+
+    <form method="POST" enctype="multipart/form-data">
+        {%load crispy_forms_tags%}
+        {%csrf_token%}
+        {{update|crispy}}
+        <button type="submit" class="btn btn-primary">Update</button>
+    </form>
+    
+</body>
+</html>
